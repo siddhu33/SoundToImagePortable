@@ -24,7 +24,7 @@ void audio_to_image(std::string inputFile, std::string outputFile) {
 	std::cout << "Image dimensions:[" << horizontal << "," << vertical << "]\n";
 	sf::Uint8* imageArray = new sf::Uint8[horizontal*vertical*4];
 	int imageSeek = 0;
-	for (int i = 0; i < sampleCount; i += 2) {
+	for (uint i = 0; i < sampleCount; i += 2) {
 		/*double left = sampleArray[i] / 32768.0;
 		double right = sampleArray[i + 1] / 32768.0;
 		hsv inColor;
